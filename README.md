@@ -32,9 +32,14 @@ This project was built to strengthen core Python fundamentals:
 ## 📂 Project Structure
 task_manager/
 │
-├── main.py
-│── README.md
-   
+├── app/
+│ ├── main.py       # Application entry logic
+│ ├── handlers.py   # User interaction (input/output)
+│ ├── logic.py      # Core business rules
+│ ├── utils.py      # Helper functions
+│── .gitignore       
+├── run.py # Entry point to start the app
+├── README.md
 
 ---
 
@@ -45,7 +50,7 @@ Make sure you have Python installed (**Python 3+**).
 Run the program:
 
 ```bash
-python task_manager.py
+python run.py
 
 ```
 
@@ -65,22 +70,18 @@ python task_manager.py
 [2] go to gym    | Priority: 3 | ✔ Done
 
 ## 💡 About this Project
-This is a beginner project created while learning Python.
+This project was built as a hands-on exercise to practice Python backend fundamentals and simulate a real application architecture.
 
-The goal was to practice programming logic and understand how a simple task management system works.
+The main focus was not only functionality, but also code organization and separation of concerns, similar to production backend systems.
 
 ## 📈 Possible Improvements
 
-- 💾 Save tasks to a file (JSON)
-
-- 🔄 Load tasks when starting the program
-
-- 📅 Add due dates
-
-- 🔝 Sort tasks by priority
-
+💾 Save tasks to a JSON file (data persistence)
+🔄 Load tasks when starting the application
+📅 Add due dates for tasks
+🔝 Sort tasks by priority
 🔍 Add search functionality
-
+🌐 Transform into a REST API using Flask or FastAPI
 
 ## 👨‍💻 Author
 - Elias Souza
